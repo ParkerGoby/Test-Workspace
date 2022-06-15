@@ -2,8 +2,11 @@ import pygame
 from sys import exit
 
 pygame.init()
-screen = pygame.display.set_mode((800, 400))
-pygame.display.set_caption('Games')
+infoObject = pygame.display.Info()
+screen = pygame.display.set_mode((infoObject.current_w, infoObject.current_h))
+pygame.display.set_caption('Bubbs')
+icon_image = pygame.image.load('icon.jpg')
+pygame.display.set_icon(icon_image)
 clock = pygame.time.Clock()
 
 while True:
