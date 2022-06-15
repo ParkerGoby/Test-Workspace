@@ -1,4 +1,3 @@
-import random
+import pygame
 
-number = random.randint(1, 70)
-print(number)
+pygame.init()
